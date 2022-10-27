@@ -1,6 +1,6 @@
 import React,{useContext} from 'react'
 import {ListGroup, ListGroupItem} from 'reactstrap'
-import {FaCheckDouble} from 'react-icons/fa'
+import {FaCheckDouble, FaTrash} from 'react-icons/fa'
 import myContext from '../Context/context'
 import { REMOVE_TODO } from '../Context/action.types'
 
@@ -20,7 +20,7 @@ const Todolist = () => {
                             payload : t.id
                         })
                     )}>
-                        <FaCheckDouble />
+                        <FaTrash />
                     </span>
                 </ListGroupItem>
             ))}
